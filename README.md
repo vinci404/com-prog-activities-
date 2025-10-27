@@ -23,3 +23,7 @@ int main() {
 
 	return 0;
 }
+
+```
+
+above are the escape sequences
