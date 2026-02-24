@@ -130,3 +130,67 @@ int main()
     return 0;
 }
 
+
+#include <stdio.h>
+
+void name(); // no arg no return
+int square(int num); // with arg with return
+int cube(int num); // with arg with return
+void checkNumber(int num); // with arg no return?
+
+
+int main() {
+	
+	int num;
+	int esqres;
+	int cubieRes;
+	
+	name();
+	
+
+	printf("Enter a number: ");
+	scanf("%d", &num);
+	esqres = square(num);
+	printf("2. Square = %d\n", esqres);
+	
+	
+	cubieRes = cube(num);
+	printf("3. Cube = %d\n", cubieRes);
+	
+	
+	checkNumber(num);
+	
+	return 0;
+}
+
+void name() {
+	printf("1. Name: Vinci \nACTIVITY 1: FUNCTIONS\n\n");
+}
+
+int square(int num) {
+	
+	int esq;
+	esq = num * num;
+	return esq;
+}
+
+int cube(int num) {
+	
+	int cubie;
+	cubie = num * num * num;
+	
+	return cubie;
+}
+
+
+void checkNumber(int num) {
+	
+	printf("4. Checked number: ");
+	if (num >=0) {
+		printf("The number is POSITIVE.");
+	} else if (num < 0){
+		printf("The number is NEGATIVE.");
+	} else {
+		printf("The number is ZERO.");
+	}
+}
